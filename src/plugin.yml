@@ -1,0 +1,8 @@
+name: bank
+version: 0.1
+main: de.projekt_black.bank.main
+author: Da_Vida, Inted
+commands:
+     bank:
+          description:
+          usage: /<command>
