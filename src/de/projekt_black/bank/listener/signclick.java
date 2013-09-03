@@ -48,7 +48,6 @@ public class signclick implements Listener{
 			return;
 		}
 		double money = this.b.getMoney(p.getName());
-		
 		if(s.getLine(1).equalsIgnoreCase("Kontostand")){
 			if(!p.hasPermission("bank.sign.use.kontostand")){
 				p.sendMessage(msg.prefixred + "Du hast keine Rechte aus dieses Schild zu klicken.");

@@ -19,11 +19,11 @@ public class main extends JavaPlugin{
 	
 	@Override
 	public void onEnable(){
-		this.getServer().getPluginManager().registerEvents(new signclick(this, b), this);
-		this.getServer().getPluginManager().registerEvents(new signchange(this, b), this);
 		fcg = this.getConfig();
 		loadConfig();
 		b = new bank(fcg,this);
+		this.getServer().getPluginManager().registerEvents(new signclick(this, b), this);
+		this.getServer().getPluginManager().registerEvents(new signchange(this, b), this);
 		System.out.println("[Bank] Das Plugin wurde geladen.");
 	}
 	

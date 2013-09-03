@@ -26,14 +26,14 @@ public class bank {
 	public bank(FileConfiguration fcg, final main plugin){
 		this.sql = new MySQL();
 		
-		plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable(){public void run() {
+		/*plugin.getServer().getScheduler().runTaskAsynchronously(plugin, new Runnable(){public void run() {
 			Random r = new Random();
 			for(int i = 0; i < 45000;i++){
 				plugin.b.createKonto("testaccount" + i, r.nextDouble()*50000);
 				System.out.println("Neues Konto fŸr testaccoutn" + i + " generiert.");
 			}
 			}
-			});
+			});*/
 		this.plugin = plugin;
 		
 		this.fcg = fcg;
